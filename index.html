@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08080a">
+  <title>AARUVI BUILDS - Liquid Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage">
+    <div class="brand">AARUVI BUILDS</div>
+
+    <div class="liquid-menu" id="liquidMenu">
+      <div class="blob blob-back"></div>
+      <div class="blob blob-main"></div>
+
+      <!-- Closed-state trigger -->
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span class="button-label">MENU</span>
+        <span class="button-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <!-- Separate close control so it never blocks navigation -->
+      <button
+        class="close-button"
+        id="closeButton"
+        type="button"
+        aria-label="Close menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navigation" aria-label="Main navigation">
+        <a class="nav-item active" href="#">
+          <span class="number">01</span>
+          <span class="name">HOME</span>
+        </a>
+
+        <a class="nav-item" href="#">
+          <span class="number">02</span>
+          <span class="name">WORK</span>
+        </a>
+
+        <a class="nav-item" href="#">
+          <span class="number">03</span>
+          <span class="name">ABOUT</span>
+        </a>
+
+        <a class="nav-item" href="#">
+          <span class="number">04</span>
+          <span class="name">CONTACT</span>
+        </a>
+      </nav>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
